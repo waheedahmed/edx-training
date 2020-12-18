@@ -26,10 +26,7 @@ export class Footer extends React.Component {
 
         return (
             <footer>
-                <p className={`text ${this.state.isClicked ? 'isActive' : ''}`}>This is {text}</p>
-                <p className={`text ${this.state.isClicked ? 'isActive' : ''}`}>This is {number}</p>
-                <p className={`text ${this.state.isClicked ? 'isActive' : ''}`}>Bool is {`${this.state.isClicked}`}</p>
-                <button onClick={() => this.handleClick()}>Click Me</button>
+                <p>This is footer!</p>
             </footer>
         )
     }

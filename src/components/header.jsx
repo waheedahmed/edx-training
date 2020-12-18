@@ -4,7 +4,7 @@ import { string } from 'prop-types';
 export const Header = ({text}) => {
     return (
         <header>
-            This is {text}.
+            <h1>This is header!</h1>
         </header>
     );
 }
