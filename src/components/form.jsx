@@ -5,14 +5,19 @@ import * as Yup from 'yup';
 import { Input, Button, ValidationFormGroup } from '@edx/paragon';
 
 const schema = Yup.object({
-    email: Yup.string().email('Invalid Email').required(),
+    email: Yup.string().email("The email address you've provided isn't formatted correctly.").required(),
   });
 
 export const FormikForm = () => {
+
+    const handleSubmit = (values) => {
+        console.log(values.email);
+    }
+
     return (
         <Formik
         validationSchema={schema}
-        onSubmit={console.log}
+        onSubmit={handleSubmit}
         initialValues={{
             email: '',
           }}
