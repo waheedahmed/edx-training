@@ -14,7 +14,7 @@
     "react-scripts": "3.4.1",
     "formik": "^2.2.5",
     "yup": "^0.32.8",
-    "@edx/paragon": "^12.4.1"
+    "@edx/paragon": "^21.5.6"
   },
   "scripts": {
     "start": "react-scripts start",
